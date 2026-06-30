@@ -1,0 +1,97 @@
+// FUNC_NAME: DonControlGadget::initializeDefaults
+
+void __fastcall DonControlGadget::initializeDefaults(uint32_t* data)
+{
+    // Zero first 4 dwords (offset 0x00 to 0x0C)
+    data[0] = 0;
+    data[1] = 0;
+    data[2] = 0;
+    data[3] = 0;
+
+    // Initialize many fields with global constants
+    data[4]  = DAT_00d5f6ec;   // +0x10
+    data[14] = 0;              // +0x38
+    data[6]  = DAT_00d5efcc;   // +0x18
+    data[17] = DAT_00d5f6e0;   // +0x44
+    data[7]  = DAT_00d5f53c;   // +0x1C
+    data[8]  = DAT_00d5f53c;   // +0x20
+    data[18] = DAT_00d5ef90;   // +0x48
+    data[20] = DAT_00d5f6e8;   // +0x50
+    data[25] = DAT_00d5f6e4;   // +0x64
+    data[28] = DAT_00d5f6e8;   // +0x70
+    data[10] = DAT_00d5efb4;   // +0x28
+    data[21] = DAT_00d5842c;   // +0x54
+    data[30] = DAT_00d5f6d8;   // +0x78
+    data[36] = DAT_00d5f6dc;   // +0x90
+    data[12] = _DAT_00d5cf70;  // +0x30
+    data[22] = DAT_00e445ac;   // +0x58
+    data[31] = DAT_00e445a0;   // +0x7C
+    data[37] = DAT_00d5f6d4;   // +0x94
+    data[38] = DAT_00d5f6d0;   // +0x98
+    data[13] = DAT_00d5f6d0;   // +0x34
+    data[15] = DAT_00d5f6d0;   // +0x3C
+    data[23] = DAT_00e445a4;   // +0x5C
+    data[32] = DAT_00d5ef84;   // +0x80
+    data[41] = DAT_00e44620;   // +0xA4
+    data[45] = DAT_00d5779c;   // +0xB4
+    data[5]  = DAT_00d58cbc;   // +0x14
+    data[9]  = DAT_00d5ef9c;   // +0x24
+    data[11] = DAT_00d58cbc;   // +0x2C
+    data[16] = _DAT_00d5780c;  // +0x40
+    data[19] = DAT_00d5eee4;   // +0x4C
+    data[24] = _DAT_00d5c458;  // +0x60
+    data[26] = _DAT_00d5c458;  // +0x68
+    data[27] = _DAT_00d5c458;  // +0x6C
+    data[29] = _DAT_00d5780c;  // +0x74
+    data[33] = DAT_00d5efa4;   // +0x84
+    data[34] = _DAT_00d5c458;  // +0x88
+    data[35] = _DAT_00d5c458;  // +0x8C
+    data[38] = _DAT_00d5780c;  // +0x98 (overwrites previous)
+    data[39] = _DAT_00d5780c;  // +0x9C
+    data[40] = _DAT_00d5c458;  // +0xA0
+    data[42] = DAT_00d5efa4;   // +0xA8
+    data[43] = _DAT_00d5780c;  // +0xAC
+    data[44] = DAT_00e446f4;   // +0xB0
+    data[46] = DAT_00d5f6cc;   // +0xB8
+    data[47] = DAT_00d5eee4;   // +0xBC
+    data[48] = _DAT_00d5780c;  // +0xC0
+    data[49] = _DAT_00d5c458;  // +0xC4
+    data[51] = DAT_00d5efa4;   // +0xCC
+    data[60] = DAT_00d5efa4;   // +0xF0
+    data[62] = DAT_00d5d7b8;   // +0xF8
+    data[69] = DAT_00d5ef9c;   // +0x114
+    data[74] = DAT_00d5ef9c;   // +0x128
+    data[58] = DAT_00d58cbc;   // +0xE8
+    data[63] = DAT_00d5779c;   // +0xFC
+    data[76] = DAT_00d5f6c8;   // +0x130
+    data[52] = _DAT_00d5780c;  // +0xD0
+    data[53] = DAT_00d5d7b8;   // +0xD4
+    data[59] = DAT_00d5f6c4;   // +0xEC
+    data[61] = _DAT_00d5780c;  // +0xF4
+    data[64] = DAT_00e44948;   // +0x100
+    data[66] = _DAT_00d5780c;  // +0x108
+    data[72] = _DAT_00d5780c;  // +0x120
+    data[77] = _DAT_00d5780c;  // +0x134
+    data[78] = DAT_00d5f414;   // +0x138
+    data[83] = _DAT_00d5780c;  // +0x14C
+    data[84] = DAT_00d5f524;   // +0x150
+    data[54] = DAT_00d5779c;   // +0xD8
+    data[56] = DAT_00d5eee4;   // +0xE0
+    data[65] = 0;              // +0x104
+    data[71] = DAT_00d5842c;   // +0x11C
+    data[79] = DAT_00d5c454;   // +0x13C
+    data[50] = DAT_00e446f4;   // +0xC8
+    data[55] = DAT_00d5f6cc;   // +0xDC
+    data[57] = DAT_00d5efd0;   // +0xE4
+    data[67] = _DAT_00d5c458;  // +0x10C
+    data[68] = DAT_00e446f4;   // +0x110
+    data[70] = DAT_00d5ddec;   // +0x118
+    data[73] = _DAT_00d5c458;  // +0x124
+    data[75] = DAT_00d5f6c0;   // +0x12C
+    data[80] = DAT_00d5f6bc;   // +0x140
+    data[81] = DAT_00d5f6c0;   // +0x144
+    data[82] = DAT_00d5ddec;   // +0x148
+    data[85] = _DAT_00d5c458;  // +0x154
+    data[86] = DAT_00e446f4;   // +0x158
+    data[87] = DAT_00d5f6e4;   // +0x15C
+}

@@ -1,0 +1,1 @@
+// FUNC_NAME: FUN_00567990 - getColorFromMaterial

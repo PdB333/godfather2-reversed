@@ -1,0 +1,1 @@
+// FUNC_NAME: BigNum::multiplyModP(const BigNum& multiplier, uint32_t modulus)
