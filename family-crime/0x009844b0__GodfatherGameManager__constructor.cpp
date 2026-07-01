@@ -1,0 +1,65 @@
+// FUNC_NAME: GodfatherGameManager::constructor
+undefined4 * __fastcall GodfatherGameManager::constructor(undefined4 *this)
+
+{
+  FUN_005bf9b0();
+  this[0x13] = &PTR_LAB_00d85d88;
+  DAT_0112a838 = this;
+  this[0x14] = &PTR_FUN_00e2f19c;
+  this[0x16] = 0;
+  this[0x15] = 1;
+  this[0x17] = 0;
+  this[0x19] = 0;
+  *(undefined1 *)(this + 0x1b) = 0;
+  *this = &PTR_FUN_00d860c0;
+  this[4] = &PTR_LAB_00d8609c;
+  this[0x13] = &PTR_LAB_00d86098;
+  this[0x14] = &PTR_LAB_00d86088;
+  this[0x1a] = 0xffffffff;
+  this[0x1c] = 0xffffffff;
+  this[0x1d] = 0xffffffff;
+  this[0x1e] = 0xffffffff;
+  this[0x1f] = 0;
+  this[0x20] = 0;
+  this[0x21] = 0;
+  this[0x22] = 0;
+  this[0x24] = 0;
+  this[0x25] = 0;
+  this[0x26] = 0;
+  this[0x27] = 0;
+  this[0x29] = 0;
+  this[0x2a] = 0;
+  *(undefined1 *)(this + 0x2b) = 0;
+  *(undefined1 *)((int)this + 0xad) = 0;
+  this[0x2d] = 0;
+  this[0x2c] = 0xffffffff;
+  this[0x2e] = 0;
+  this[0x2f] = 0;
+  this[0x30] = 0;
+  this[0x31] = 0;
+  *(undefined1 *)((int)this + 0xcd) = 0;
+  *(undefined1 *)((int)this + 0xce) = 0;
+  this[0x34] = 0;
+  this[0x35] = 0;
+  this[0x36] = 0;
+  this[0x37] = 0;
+  this[0x32] = 0;
+  *(undefined1 *)(this + 0x33) = 1;
+  this[0x38] = 0;
+  *(undefined2 *)(this + 0x39) = 0;
+  *(undefined2 *)((int)this + 0xe6) = 0;
+  this[0x3a] = 0;
+  *(undefined2 *)(this + 0x3b) = 0;
+  *(undefined2 *)((int)this + 0xee) = 0;
+  this[0x3c] = 0xbadbadba;
+  this[0x3d] = 0xbeefbeef;
+  this[0x3e] = 0xeac15a55;
+  this[0x3f] = 0x91100911;
+  this[0x40] = 0;
+  *(undefined1 *)(this + 0x41) = 0;
+  *(undefined1 *)((int)this + 0x105) = 0;
+  this[0x28] = &DAT_00e2f044;
+  this[0x23] = &DAT_00e2f044;
+  this[0x42] = 0xffffffff;
+  return this;
+}

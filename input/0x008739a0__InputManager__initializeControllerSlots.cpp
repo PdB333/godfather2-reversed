@@ -1,0 +1,98 @@
+// FUNC_NAME: InputManager::initializeControllerSlots
+void __fastcall InputManager::initializeControllerSlots(undefined4 *this)
+{
+  undefined4 uVar1;
+  undefined4 uVar2;
+  
+  // Initialize controller slot data from global constants
+  // +0x40: slot[0].field_0x40
+  this[0x10] = DAT_00d5f52c;
+  // +0x44: slot[0].field_0x44
+  this[0x11] = DAT_00d7630c;
+  uVar1 = DAT_00d5833c;
+  // +0x38: slot[0].field_0x38
+  this[0xe] = DAT_00d5c454;
+  uVar2 = DAT_00d5eee4;
+  // +0x48: slot[0].field_0x48
+  this[0x12] = uVar1;
+  uVar1 = DAT_00e44784;
+  // +0x3c: slot[0].field_0x3c
+  this[0xf] = uVar2;
+  // +0x4c: slot[0].field_0x4c
+  this[0x13] = uVar1;
+  uVar1 = _DAT_00d5780c;
+  // +0x7c: slot[0].field_0x7c
+  this[0x1f] = uVar2;
+  uVar2 = DAT_00d5ccf8;
+  // Set vtable pointer
+  *this = &PTR_FUN_00d76304;
+  // Zero out various fields
+  *(undefined1 *)(this + 1) = 0;  // +0x04: byte field
+  *(undefined1 *)((int)this + 5) = 0;  // +0x05: byte field
+  *(undefined1 *)((int)this + 6) = 0;  // +0x06: byte field
+  this[2] = 0;   // +0x08
+  this[3] = 0;   // +0x0c
+  this[7] = 0x1ff;  // +0x1c: some bitmask or limit
+  this[9] = 0;   // +0x24
+  this[10] = 0;  // +0x28
+  this[0xb] = 0; // +0x2c
+  this[0xd] = 0x2000;  // +0x34: some buffer size or limit
+  this[0x14] = 0;  // +0x50
+  this[0x15] = 0;  // +0x54
+  this[0x16] = 0;  // +0x58
+  this[0x17] = 0;  // +0x5c
+  this[0x18] = 0;  // +0x60
+  this[0x19] = 0;  // +0x64
+  this[0x1a] = 0;  // +0x68
+  this[0x1b] = 0;  // +0x6c
+  this[0x1c] = 0;  // +0x70
+  this[0x1d] = 0;  // +0x74
+  this[0x1e] = uVar1;  // +0x78: from global
+  this[0x20] = uVar2;  // +0x80: from global
+  this[4] = 0;   // +0x10
+  this[5] = 0;   // +0x14
+  this[6] = 0;   // +0x18
+  this[8] = 0x800;  // +0x20: some limit
+  this[0xc] = 0x800;  // +0x30: another limit
+  this[0x21] = 0;  // +0x84
+  this[0x24] = 0;  // +0x90
+  this[0x23] = 0;  // +0x8c
+  this[0x22] = 0;  // +0x88
+  this[0x41] = 0;  // +0x104
+  this[0x28] = 0;  // +0xa0
+  this[0x27] = 0;  // +0x9c
+  this[0x26] = 0;  // +0x98
+  this[0x25] = 0;  // +0x94
+  this[0x42] = 0;  // +0x108
+  this[0x2c] = 0;  // +0xb0
+  this[0x2b] = 0;  // +0xac
+  this[0x2a] = 0;  // +0xa8
+  this[0x29] = 0;  // +0xa4
+  this[0x43] = 0;  // +0x10c
+  this[0x30] = 0;  // +0xc0
+  this[0x2f] = 0;  // +0xbc
+  this[0x2e] = 0;  // +0xb8
+  this[0x2d] = 0;  // +0xb4
+  this[0x44] = 0;  // +0x110
+  this[0x34] = 0;  // +0xd0
+  this[0x33] = 0;  // +0xcc
+  this[0x32] = 0;  // +0xc8
+  this[0x31] = 0;  // +0xc4
+  this[0x45] = 0;  // +0x114
+  this[0x38] = 0;  // +0xe0
+  this[0x37] = 0;  // +0xdc
+  this[0x36] = 0;  // +0xd8
+  this[0x35] = 0;  // +0xd4
+  this[0x46] = 0;  // +0x118
+  this[0x3c] = 0;  // +0xf0
+  this[0x3b] = 0;  // +0xec
+  this[0x3a] = 0;  // +0xe8
+  this[0x39] = 0;  // +0xe4
+  this[0x47] = 0;  // +0x11c
+  this[0x40] = 0;  // +0x100
+  this[0x3f] = 0;  // +0xfc
+  this[0x3e] = 0;  // +0xf8
+  this[0x3d] = 0;  // +0xf4
+  this[0x48] = 0;  // +0x120
+  return;
+}

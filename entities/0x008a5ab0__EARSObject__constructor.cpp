@@ -1,0 +1,13 @@
+// FUNC_NAME: EARSObject::constructor
+undefined4 __thiscall EARSObject::constructor(undefined4 this, byte flags)
+{
+  // Call base class constructor at 0x008a56b0
+  FUN_008a56b0();
+  
+  // If bit 0 of flags is set, call virtual destructor at 0x009c8eb0
+  if ((flags & 1) != 0) {
+    FUN_009c8eb0(this);
+  }
+  
+  return this;
+}
